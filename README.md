@@ -26,5 +26,13 @@ First of all [Node](https://nodejs.org/en/) is required to run Javascript files 
 5. Install NPM packages `npm install`
 6. Create a **.env** file in the same directory, which will be used to store the API keys
    The content of this file should look like this:
+   ```
    DISCORD_BOT_TOKEN={insert discord bot token here}
    W2G_API_KEY={insert w2g api key here}
+   ```
+7. Connect the Discord bot to a server by going taking the **Application ID** form the **General Information** tab in your Discord App on the Developer Platform. Using this key go to https://discord.com/oauth2/authorize?client_id={insert application id here}&scope=bot , where a server can be selected.
+8. Execute the script
+
+```
+npm run start
+```
