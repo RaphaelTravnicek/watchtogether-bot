@@ -12,7 +12,10 @@ First of all [Node](https://nodejs.org/en/) is required to run Javascript files 
 
 - Node.js
   - Make sure that you are using Node version 16.6.1 or higher, as lower versions will cause problems with the discord-js v13 package.
-  - For example Node.js version 16.6.1 can be installed only on the project directory using: `npm install node@16.6.1 --save-exact`
+  - For example Node.js version 16.6.1 can be installed only on the project directory using:
+  ```
+  npm install node@16.6.1 --save-exact
+  ```
 
 * npm
 
@@ -22,8 +25,17 @@ First of all [Node](https://nodejs.org/en/) is required to run Javascript files 
 2. Create a bot for this application and generate a token for it.
 3. Register at [WatchTogether](https://w2g.tv/), then go to **Edit Profile** and generate an API key.
 4. Clone the repository
-   `git clone https://github.com/RaphaelTravnicek/watchtogether-bot.git`
-5. Install NPM packages `npm install`
+
+```
+   git clone https://github.com/RaphaelTravnicek/watchtogether-bot.git
+```
+
+5. Install NPM packages
+
+```
+npm install
+```
+
 6. Create a **.env** file in the same directory, which will be used to store the API keys
    The content of this file should look like this:
    ```
@@ -36,3 +48,12 @@ First of all [Node](https://nodejs.org/en/) is required to run Javascript files 
 ```
 npm run start
 ```
+
+## Usage
+
+Once the installation process is completed, the bot should appear on your server. It listens to commands starting with the prefix "$". The list of commands includes:
+
+- $create
+  - This sends back the link to a new Watchtogether room
+- $create {URL}
+  - This sends back the link to a new Watchtogether room, where the URL provided (considering it is valid) will already be ready to play
